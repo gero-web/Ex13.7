@@ -29,7 +29,7 @@
     "dev": " webpack-dev-server",
     "back": "json-server --watch db.json",
     "prepare": "husky install",
-    "lint":"eslint -r *.js"
+    "lint":"eslint **/*.js --ignore-pattern node_modules/ --ignore-pattern webpack.config.js --ignore-pattern dist/ --ignore-pattern .eslintrc.js"
   },
 
   "dependencies": {
